@@ -2,8 +2,8 @@ import scrapy
 from tumjob.items import TumjobItem
 class tumjobspider(scrapy.Spider):
     name = "tumjob"
-    allowed_domains = ['db.alumni.tum.de']
-    #start_urls = ['https://*****.de/jobs/search?utf8=%E2%9C%93&search%5Bq%5D=werkstudent', 'https://db.alumni.tum.de/jobs/search?utf8=%E2%9C%93&search%5Bq%5D=working+student']
+    allowed_domains = ['*****.de']
+    #start_urls = ['https://*****.de/jobs/search?utf8=%E2%9C%93&search%5Bq%5D=werkstudent', 'https://*****.de/jobs/search?utf8=%E2%9C%93&search%5Bq%5D=working+student']
 
     def start_requests(self):
         #scrapy crawl tumjob -o items.json -a keyword=werkstudent
